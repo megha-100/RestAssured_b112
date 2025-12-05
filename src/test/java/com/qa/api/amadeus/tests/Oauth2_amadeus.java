@@ -43,6 +43,7 @@ public class Oauth2_amadeus extends BaseTest {
 	  response.prettyPrint();
 	  token= response.jsonPath().getString("access_token");
 	  //we need to set the configmanager BearerToken to the latest one 
+	  //hi
 	  ConfigManager.set("BearerToken", token);
  }
 
